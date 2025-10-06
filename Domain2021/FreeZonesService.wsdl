@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Oracle JAX-WS 2.1.5. --><!--
+    This Service Created by Rayyan on 15/09/2018 to Integrate Jordan Investment Commission (JIC) – Free Zones to GSB 
+--><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="FreeZonesSrv" targetNamespace="http://tempuri.org/">
+    <wsp:Policy wsu:Id="CustomBinding_FreeZones_policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+                    <wsp:Policy>
+                        <sp:TransportToken>
+                            <wsp:Policy>
+                                <sp:HttpsToken RequireClientCertificate="false"/>
+                            </wsp:Policy>
+                        </sp:TransportToken>
+                        <sp:AlgorithmSuite>
+                            <wsp:Policy>
+                                <sp:Basic256/>
+                            </wsp:Policy>
+                        </sp:AlgorithmSuite>
+                        <sp:Layout>
+                            <wsp:Policy>
+                                <sp:Strict/>
+                            </wsp:Policy>
+                        </sp:Layout>
+                    </wsp:Policy>
+                </sp:TransportBinding>
+                <sp:SupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+                    <wsp:Policy>
+                        <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                            <wsp:Policy>
+                                <sp:WssUsernameToken10/>
+                            </wsp:Policy>
+                        </sp:UsernameToken>
+                    </wsp:Policy>
+                </sp:SupportingTokens>
+                <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+                    <wsp:Policy/>
+                </sp:Wss11>
+                <sp:Trust10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+                    <wsp:Policy>
+                        <sp:MustSupportIssuedTokens/>
+                        <sp:RequireClientEntropy/>
+                        <sp:RequireServerEntropy/>
+                    </wsp:Policy>
+                </sp:Trust10>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+            <xs:import namespace="http://schemas.datacontract.org/2004/07/MoICT.Entities"/>
+            <xs:element name="getCommercialRecordRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xsd:element name="estIdNo" type="xsd:long"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getCommercialRecordResponse">
+                <xs:complexType>
+                    <xs:sequence>
+						<xsd:element name="estIdNo" type="xsd:long"/>
+                        <xsd:element name="estName" type="xsd:string"/>
+                        <xsd:element name="shareCapital" type="xsd:double"/>
+						<xsd:element name="estStatusCode" type="xsd:long"/>
+						<xsd:element name="estStatusDesc" type="xsd:string"/>
+						<xsd:element name="ownersNatNo" type="xsd:long" maxOccurs="unbounded"/>
+						<xsd:element name="ownersName" type="xsd:string" maxOccurs="unbounded"/>
+						<xsd:element name="economicActivityCode" type="xsd:long"/>
+						<xsd:element name="economicActivityDesc" type="xsd:string"/>
+						<xsd:element name="mobileNo" type="xsd:string"/>
+						<xsd:element name="faxNo" type="xsd:string"/>
+						<xsd:element name="postNo" type="xsd:string"/>
+						<xsd:element name="guaranteeStatus" type="xsd:int"/>
+                        <xs:element name="resultMessage">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="resultCode" type="xs:int"/>
+                                    <xs:element name="resultDesc" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getVocationalLicenseRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xsd:element name="licenseNo" type="xsd:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getVocationalLicenseResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xsd:element name="licenseNo" type="xsd:string"/>
+                        <xsd:element name="estIdNo" type="xsd:long"/>
+                        <xsd:element name="commercialName" type="xsd:string"/>
+                        <xsd:element name="licenseOwner" type="xsd:string"/>
+                        <xsd:element name="investorNo" type="xsd:long"/>
+                        <xsd:element name="licenseYear" type="xsd:int"/>
+                        <xsd:element name="issueDate" type="xsd:date"/>
+                        <xsd:element name="expiryDate" type="xsd:date"/>
+                        <xsd:element name="investmentTypeCode" type="xsd:long"/>
+                        <xsd:element name="investmentTypeDesc" type="xsd:string"/>
+                        <xsd:element name="economicActivityCode" type="xsd:long"/>
+                        <xsd:element name="economicActivityDesc" type="xsd:string"/>
+                        <xsd:element name="address" type="xsd:string"/>
+                        <xsd:element name="districtNo" type="xsd:long"/>
+                        <xsd:element name="guaranteeStatus" type="xsd:int"/>
+                        <xs:element name="resultMessage">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="resultCode" type="xs:int"/>
+                                    <xs:element name="resultDesc" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
+            <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+            <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+            <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+            <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+            <xs:element name="byte" nillable="true" type="xs:byte"/>
+            <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+            <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+            <xs:element name="double" nillable="true" type="xs:double"/>
+            <xs:element name="float" nillable="true" type="xs:float"/>
+            <xs:element name="int" nillable="true" type="xs:int"/>
+            <xs:element name="long" nillable="true" type="xs:long"/>
+            <xs:element name="QName" nillable="true" type="xs:QName"/>
+            <xs:element name="short" nillable="true" type="xs:short"/>
+            <xs:element name="string" nillable="true" type="xs:string"/>
+            <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+            <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+            <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+            <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+            <xs:element name="char" nillable="true" type="tns:char"/>
+            <xs:simpleType name="char">
+                <xs:restriction base="xs:int"/>
+            </xs:simpleType>
+            <xs:element name="duration" nillable="true" type="tns:duration"/>
+            <xs:simpleType name="duration">
+                <xs:restriction base="xs:duration">
+                    <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+                    <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+                    <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+                </xs:restriction>
+            </xs:simpleType>
+            <xs:element name="guid" nillable="true" type="tns:guid"/>
+            <xs:simpleType name="guid">
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+                </xs:restriction>
+            </xs:simpleType>
+            <xs:attribute name="FactoryType" type="xs:QName"/>
+            <xs:attribute name="Id" type="xs:ID"/>
+            <xs:attribute name="Ref" type="xs:IDREF"/>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/FreeZones" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FreeZones">
+            <xs:complexType name="FreeZonesExceptionFault">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:int"/>
+                    <xs:element minOccurs="0" name="errorDesc" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="FreeZonesExceptionFault" nillable="true" type="tns:FreeZonesExceptionFault"/>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getCommercialRecordRequest">
+        <wsdl:part name="getCommercialRecordRequestPart" element="tns:getCommercialRecordRequest"/>
+    </wsdl:message>
+    <wsdl:message name="getCommercialRecordResponse">
+        <wsdl:part name="getCommercialRecordResponsePart" element="tns:getCommercialRecordResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getCommercialRecordFaultMessage">
+        <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/FreeZones" name="errorFaultMessagePart" element="q1:FreeZonesExceptionFault"/>
+    </wsdl:message>
+    <wsdl:message name="getVocationalLicenseRequest">
+        <wsdl:part name="getVocationalLicenseRequestPart" element="tns:getVocationalLicenseRequest"/>
+    </wsdl:message>
+    <wsdl:message name="getVocationalLicenseResponse">
+        <wsdl:part name="getVocationalLicenseResponsePart" element="tns:getVocationalLicenseResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getVocationalLicenseFaultMessage">
+        <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/FreeZones" name="errorFaultMessagePart" element="q2:FreeZonesExceptionFault"/>
+    </wsdl:message>
+    <wsdl:portType name="FreeZonesServiceInterface">
+        <wsdl:operation name="getCommercialRecord">
+            <wsdl:input wsaw:Action="http://tempuri.org/FreeZonesServiceInterface/getCommercialRecordRequest" message="tns:getCommercialRecordRequest"/>
+            <wsdl:output wsaw:Action="http://tempuri.org/FreeZonesServiceInterface/getCommercialRecordResponse" message="tns:getCommercialRecordResponse"/>            
+            <wsdl:fault wsaw:Action="http://tempuri.org/FreeZonesServiceInterface/getWellLicenseFreeZonesExceptionFault" name="FreeZonesExceptionFault" message="tns:getCommercialRecordFaultMessage"/>
+        </wsdl:operation>
+        <wsdl:operation name="getVocationalLicense">
+            <wsdl:input wsaw:Action="http://tempuri.org/FreeZonesServiceInterface/getVocationalLicenseRequest" message="tns:getVocationalLicenseRequest"/>
+            <wsdl:output wsaw:Action="http://tempuri.org/FreeZonesServiceInterface/getVocationalLicenseResponse" message="tns:getVocationalLicenseResponse"/>
+            <wsdl:fault wsaw:Action="http://tempuri.org/FreeZonesServiceInterface/getVocationalLicenseFaultMessage" name="FreeZonesExceptionFault" message="tns:getVocationalLicenseFaultMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="FreeZonesServiceBinding" type="tns:FreeZonesServiceInterface">
+        <wsp:PolicyReference URI="#CustomBinding_FreeZones_policy"/>
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getCommercialRecord">
+            <soap:operation soapAction="http://tempuri.org/FreeZonesServiceInterface/getWellLicense" style="document"/>            
+            <wsdl:input>
+                <soap:body parts="getCommercialRecordRequestPart" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="getCommercialRecordResponsePart" use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="FreeZonesExceptionFault">
+                <soap:fault use="literal" name="FreeZonesExceptionFault" namespace=""/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getVocationalLicense">            
+            <soap:operation soapAction="http://tempuri.org/FreeZonesServiceInterface/getVocationalLicense" style="document"/>            
+            <wsdl:input>
+                <soap:body parts="getVocationalLicenseRequestPart" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="getVocationalLicenseResponsePart" use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="FreeZonesExceptionFault">
+                <soap:fault use="literal" name="FreeZonesExceptionFault" namespace=""/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="FreeZonesService">
+        <wsdl:port name="FreeZonesPort" binding="tns:FreeZonesServiceBinding">
+            <soap:address location="https://stage.gsb.gov.jo/FreeZonesService/FreeZonesPort"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,94 @@
+﻿
+DNS\DomainManage:There was no endpoint listening at https://api-gateway.g2b.gsb.gov.jo:9443/porg-gsb/g2b-catalog/cspd-ve-vitaleventssrv-all that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.SecurityChannelFactory`1.SecurityRequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Domain2021.ServiceReference3.IVitalEvents.gePersonal(String nationalNo)
+   at Domain2021.ServiceReference3.VitalEventsClient.gePersonal(String nationalNo) in D:\Projects\Domain2021\Domain2021\Connected Services\ServiceReference3\Reference.vb:line 7417
+   at Domain2021.DomainManage.NationalNo_TextChanged(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Admins\DNS\DomainManage.aspx.vb:line 808 2/16/2025 1:56:28 PM
+DNS\DomainManage:Procedure or function 'update_b' expects parameter '@Userid', which was not supplied.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Domain2021.DomainManage.Button1_Click(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Admins\DNS\DomainManage.aspx.vb:line 565 2/16/2025 2:00:57 PM
+DNS\details:Procedure or function 'insert_log3' expects parameter '@admin', which was not supplied.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Domain2021.Details.Approve_Click(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Admins\DNS\Details.aspx.vb:line 438 4/11/2025 2:25:59 PM
+DNS\details:Could not find stored procedure 'EmailTabText'.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at Domain2021.Details.send_e_mailEn(String DOMAIN_NAME, String SECOND_DOMAIN, String recipant_email, String recipant_name) in D:\Projects\Domain2021\Domain2021\Admins\DNS\Details.aspx.vb:line 874 4/11/2025 4:15:38 PM
+DNS\details:Operator '&' is not defined for string "<li><b>" and type 'ListItem'.   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(Object Left, Object Right)
+   at Domain2021.Details.send_e_mailAR(String DOMAIN_NAME, String SECOND_DOMAIN, String recipant_email, String recipant_name) in D:\Projects\Domain2021\Domain2021\Admins\DNS\Details.aspx.vb:line 791 4/11/2025 4:45:05 PM
+DNS\details:Operator '&' is not defined for string "<li><b>" and type 'ListItem'.   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(Object Left, Object Right)
+   at Domain2021.Details.send_e_mailAR(String DOMAIN_NAME, String SECOND_DOMAIN, String recipant_email, String recipant_name) in D:\Projects\Domain2021\Domain2021\Admins\DNS\Details.aspx.vb:line 791 4/11/2025 4:47:05 PM
+DNS\details:Operator '&' is not defined for string "<li><b>" and type 'ListItem'.   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(Object Left, Object Right)
+   at Domain2021.Details.send_e_mailAR(String DOMAIN_NAME, String SECOND_DOMAIN, String recipant_email, String recipant_name) in D:\Projects\Domain2021\Domain2021\Admins\DNS\Details.aspx.vb:line 791 4/11/2025 4:50:09 PM
+DNS\details:Operator '&' is not defined for string "<li><b>" and type 'ListItem'.   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(Object Left, Object Right)
+   at Domain2021.Details.send_e_mailAR(String DOMAIN_NAME, String SECOND_DOMAIN, String recipant_email, String recipant_name) in D:\Projects\Domain2021\Domain2021\Admins\DNS\Details.aspx.vb:line 792 4/11/2025 5:02:37 PM
+DNS\details:Operator '&' is not defined for string "<li><b>" and type 'ListItem'.   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(Object Left, Object Right)
+   at Domain2021.Details.send_e_mailAR(String DOMAIN_NAME, String SECOND_DOMAIN, String recipant_email, String recipant_name) in D:\Projects\Domain2021\Domain2021\Admins\DNS\Details.aspx.vb:line 792 4/11/2025 5:36:07 PM
+DNS\details:Operator '&' is not defined for string "<li><b>" and type 'ListItem'.   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeObjectUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.InvokeUserDefinedOperator(UserDefinedOperator Op, Object[] Arguments)
+   at Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(Object Left, Object Right)
+   at Domain2021.Details.send_e_mailAR(String DOMAIN_NAME, String SECOND_DOMAIN, String recipant_email, String recipant_name) in D:\Projects\Domain2021\Domain2021\Admins\DNS\Details.aspx.vb:line 794 4/11/2025 5:42:51 PM
+DNS\DomainManage:Procedure or function 'update_b' expects parameter '@Userid', which was not supplied.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Domain2021.DomainManage.Button1_Click(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Admins\DNS\DomainManage.aspx.vb:line 565 8/6/2025 3:10:29 PM
+DNS\DomainManage:Procedure or function 'update_b' expects parameter '@Userid', which was not supplied.   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Domain2021.DomainManage.Button1_Click(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Admins\DNS\DomainManage.aspx.vb:line 565 8/6/2025 3:12:07 PM

@@ -1,0 +1,16 @@
+div.RadGrid .myTable, div.RadGrid .myTable td
+{
+    border: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.rgEditForm > table > tbody > tr:first-child > td
+{
+    padding-top: 10px;
+}
+div.RadGrid .rgEditForm>table 
+{
+    padding-left:10px;
+}
+

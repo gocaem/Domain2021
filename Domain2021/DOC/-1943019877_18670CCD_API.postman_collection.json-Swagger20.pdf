@@ -1,0 +1,57 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "CCD_API",
+    "contact": {}
+  },
+  "host": "localhost",
+  "basePath": "/CCD_API/api",
+  "securityDefinitions": {},
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/GetBudgetyrbyIdnumber": {
+      "post": {
+        "summary": "https://localhost/CCD_API/api/GetBudgetyrbyIdnumber?IDNUMER=200013345",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "https://localhost/CCD_API/api/GetBudgetyrbyIdnumber?IDNUMER=200013345",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "IDNUMER",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="/admins/DNS/ActivateThis.aspx" title="Home"  description="Home Page" >
+    <siteMapNode  title="Managements"  description="Managements tab">
+      <siteMapNode url ="/admins/DNS/CMS.aspx" title="CMS"  description="CMS Page"></siteMapNode>
+      <siteMapNode url ="/admins/DNS/ManageUsers.aspx" title="Manage Users"  description="ManageUsers Page"></siteMapNode>
+	  <siteMapNode url ="/admins/DNS/ManageEmail.aspx" title="Manage Email"  description="ManageEmail Page"></siteMapNode>
+	  <siteMapNode url ="/admins/DNS/AdminManagement.aspx" title="Admin Management"  description="Admin Management Page"></siteMapNode>
+	  <siteMapNode url ="/admins/DNS/Servermanage.aspx" title="Manage Servers"  description="Manage Server Page"></siteMapNode>
+	  <siteMapNode url ="/admins/DNS/Unblock.aspx" title="Unblock Users"  description="Unblock Users Page"></siteMapNode>
+	  <siteMapNode url ="/admins/DNS/DomainManage.aspx" title="Manage Domain"  description="Manage Domain Page"></siteMapNode>
+	  <siteMapNode url ="/admins/DNS/UnifyAdmin.aspx" title="Unify Admin"  description="Unify Admin Page"></siteMapNode>
+	  <siteMapNode url ="/admins/DNS/UpdateDN.aspx" title="Update DN's Data"  description="Update DN's Data"></siteMapNode>
+
+
+	</siteMapNode>
+    <siteMapNode url="/admins/DNS/SendPassword.aspx" title="Send Password"  description="Send Password Page" />
+	  <siteMapNode  title="Approve and Payment"  description="Approve and Payment tab">
+		  <siteMapNode url ="/admins/DNS/Approve.aspx" title="Approve Domains"  description="Approve Domains Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/ApproveSub.aspx" title="Approve Sub Domains"  description="Approve Sub Domains Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/ApproveUpdate.aspx" title="Approve Domains Updates"  description="Approve Domains Updates Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/RegisterSub.aspx" title="Register Sub Domains"  description="Register Sub Domains Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/ExpiredDomains.aspx" title="Send Invoices"  description="Send Invoices Page"></siteMapNode>
+	
+	  </siteMapNode>
+	  <siteMapNode  title="Reports"  description="Reports tab">
+		  <siteMapNode url ="/admins/DNS/Unused.aspx" title="Unused Report"  description="Unused Report Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/SubDomainReport.aspx" title="Sub Domains Report"  description="Sub Domains Report Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/EfawateerComRep.aspx" title="EfawateerCom Report"  description="EfawateerCom Report Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/Free.aspx" title="Free Domains Report"  description="Free Domains Report Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/Searchclass.aspx" title="Search Classification"  description="Search Classification Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/SearchByemailphone.aspx" title="Search By email/phone"  description="Search By email/phone Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/RejectApprove.aspx" title="Reject Approve Report"  description="Reject Approve Report Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/RegistrantSearch.aspx" title="Registrant Search"  description="Registrant Search Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/DomainOfAdmin.aspx" title="Domains Of Admin Report"  description="Domains Of Admin Report Page"></siteMapNode>
+
+	  </siteMapNode>
+
+	  <siteMapNode  title="Settings and Test"  description="Settings and Test tab">
+		  <siteMapNode url ="/admins/DNS/InvoiceSetting.aspx" title="Invoice Setting"  description="Invoice Setting Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/BanAdmin.aspx" title="Ban Admin"  description="Ban Admin Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/ASCII.aspx" title="ASCII"  description="ASCII Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/TestEmailSMS.aspx" title="Test Email SMS"  description="Test Email SMS Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/Extract_DN.aspx" title="Extract Domain Name"  description="Extract Domain Name Page"></siteMapNode>
+
+	  </siteMapNode>
+	  <siteMapNode  title="Lookups"  description="Lookups tab">
+		  <siteMapNode url ="/admins/DNS/Reserved.aspx" title="Reserved Domain Name"  description="Reserved Domain Name Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/UpFees.aspx" title="Update Fees"  description="Update Fees Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/SecondDomains.aspx" title="Manage Second Names"  description="Manage Second Names Page"></siteMapNode>
+		  <siteMapNode url ="/admins/DNS/Classification.aspx" title="Manage Domain's Classification"  description="Manage Domain's Classification Page"></siteMapNode>
+	  </siteMapNode>
+  </siteMapNode>
+</siteMap>

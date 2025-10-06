@@ -1,0 +1,16 @@
+commit:
+  connect:
+    project: EGC-Domain2021-2
+    stream: EGC-Domain2021-2
+    url: https://partner-coverity.demo.blackduck.com/
+analyze:
+  checkers:
+    all: true
+    audit: true
+    webapp-security:
+      aggressiveness-level: high
+
+capture:
+  build:
+    #build-command: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe Domain2021.sln /t:Rebuild /p:Configuration=Release"
+    build-command: "MSBuild.exe Domain2021.sln /t:Rebuild /p:Configuration=Release"

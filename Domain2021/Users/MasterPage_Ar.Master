@@ -1,0 +1,399 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage_Ar.Master.vb" Inherits="Domain2021.MasterPage_Ar" %>
+
+<html lang="zxx" dir="ltr">
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="build/css/intlTelInput.css" media="all"/>
+    <style>
+    
+        input[type=file]::file-selector-button {
+            content: 'تحميل ملفات';
+            direction: rtl;
+            margin-right: 20px;
+            border: none;
+            background: #084cdf;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition: background .2s ease-in-out;
+        }
+      
+       
+       .ruFileInput{
+            content: 'تحميل ملفات';
+            direction: rtl;
+            margin-right: 20px;
+            border: none;
+            background: #084cdf;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition: background .2s ease-in-out;
+        }
+       .RadComboBoxDropDown .rcbItem, .RadComboBoxDropDown .rcbHovered, .RadComboBoxDropDown .rcbDisabled, .RadComboBoxDropDown .rcbLoading, .RadComboBoxDropDown .rcbCheckAllItems, .RadComboBoxDropDown .rcbCheckAllItemsHovered {
+            background-color: white;
+        }
+        input[type=file]::file-selector-button:hover {
+            background: #0d45a5;
+        }
+        html div.RadAsyncUpload .ruButton.ruBrowse
+            {    	display: inline-block;
+	                font-weight: 400;
+	                color: #212529;
+	                text-align: center;
+	                border: 1px solid transparent;
+	                padding: .375rem .375rem;
+                    font-family:Calibri;
+	                font-size: 1rem;
+    	            line-height: 0.5;
+	                border-radius: .25rem;
+	                color: #fff;
+	                background-color: #007bff;
+             }
+        html div.RadAsyncUpload.wizInternalLabels {
+                     color: #00008B;
+                     font-size: x-large;
+                     height: 200px;
+                }
+       .RadUpload .ruUploadProgress {
+                width: 210px;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                vertical-align: top;
+                }
+       .RadUpload .ruFakeInput  {
+          
+                  width: 300px;
+                  padding: .375rem .75rem;
+                  font-size: 1rem;
+                  line-height: 3.5;
+                  height:200px;
+                  color: #495057;
+                  align-content:center;
+                  background-color: #fff;
+                  background-clip: padding-box;
+                  border: 1px solid #ced4da;
+                  border-radius: .25rem;
+                  text-wrap:normal;
+                  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+                }
+           .iti input, .iti input[type=text], .iti input[type=tel] ::placeholder{
+            direction:ltr;
+            text-align:right;
+            }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        .hidden {
+            display: none;
+            border-right-style: none;
+            border-left-style: none;
+            border-bottom-style: none;
+            border-right: 0;
+            border-left: 0;
+            border-top: 0;
+            border-bottom: 0;
+        }
+        a {
+            font-family: cairo
+        }
+        .callout {
+            direction: rtl;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f3f3f3;
+            border: 1px solid #4241aa;
+            border-right-width: 10px;
+            border-radius: 3px;
+        }
+        h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        code {
+            border-radius: 3px;
+        }
+        & + .bs-callout {
+            margin-top: -5px;
+        }
+
+        }
+        @each $name,$color in (default,#428bca),(primary,#428bca),(success,#5cb85c),(danger,#d9534f),(warning,#f0ad4e),(info,#5bc0de), (bdc,#29527a) {
+            .callout-# {
+                $name
+            }
+        {
+            border-left-color: $color;
+            h4
+        {
+            color: $color;
+        }
+        }
+       
+    </style>
+    <script>
+        function NewWindow() {
+            document.forms[1].target = '_blank';
+        }
+    </script>
+
+    <title>موقع تسجيل النطاقات</title>
+
+
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.html">
+    <link rel="shortcut icon" type="image/ico" href="../images/favicon.html" />
+    <link rel="stylesheet" href="CSS/bootstrap1.css" media="all">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="../css/matrialize.css" rel="stylesheet">
+    <link href="../owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" media="all">
+    <link rel="stylesheet" href="../css/style.css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet" media="all">
+
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.html">
+    <link rel="shortcut icon" type="image/ico" href="../images/favicon.html" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400|Dancing+Script' rel='stylesheet' type='text/css' media="all" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" media="all">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="../css/matrialize.css" rel="stylesheet" media="all"/>
+    <link href="../owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" media="all" />
+    <link href="Upload.css" rel="stylesheet" />
+    <script src="Upload.js"></script></head>
+    <!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="head1" runat="server">
+    </asp:ContentPlaceHolder>
+    <header class="header">
+
+
+
+
+        <div class="top_bar background-color-orange">
+            <div class="top_bar_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+                                <ul class="top_bar_contact_list">
+                                    <li class="dropdown" style="text-align: right">
+                                        <a id="user-profile" href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;">
+                                            <label id="lusername" runat="server" style="color: white; font-family: cairo;"></label>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-block" role="menu" style="color: white; width: 100%; direction: rtl; text-align: right; font-weight: bold">
+                                            <li dir="rtl"><a href="Profile.aspx" style="font-family: cairo; direction: rtl; font-weight: bold"> حسابي </a></li>
+                                            <li class="fa fa-key"><a href="ChangePassword.aspx" style="padding-left: 30px; font-family: cairo; direction: rtl; font-weight: bold">نغيير كلمةالسرَ</a></li>
+                                            <li class="fa fa-sign-out"><a href="Logout.aspx" style="padding-left: 40px; font-family: cairo; direction: rtl; font-weight: bold; padding-right: 20px">خروج</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa fa-phone coll" aria-hidden="true"></i>
+                                        <div class="contact-no">00962 6 5300263</div>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope coll" aria-hidden="true"></i>
+                                        <div class="email">
+                                            <a href="mailto:dns@modee.gov.jo" style="color: white">dns@modee.gov.jo</a>
+                                        </div>
+                                    </li>
+
+
+
+
+                                </ul>
+                                <div class=" ml-auto ">
+                                    <div></div>
+                                    <div class="hamburger menu_mm  search_button transparent search display"><i class="large material-icons font-color-white  search-icone  menu_mm ">menu</i></div>
+                                    <div id="navbar-collapse" class="collapse navbar-collapse">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_container background-color-orange-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container">
+                                <a href="../firstpage.aspx">
+                                    <img src="../imags/logo.png" class="logo-text" alt="">
+                                </a>
+                            </div>
+                            <nav class="main_nav_contaner ml-auto" style="font-family: cairo">
+                                <ul class="main_nav">
+                                    <li>
+                                        <a href="Invoice.aspx" style="font-family: cairo;">اعداد فاتورة
+                                        </a>
+                                    </li>
+                                    <li><a href="Include.aspx" style="font-family: cairo;">ضم نطاقات لحسابي</a></li>
+                              
+                                    <li><a href="report_invoice.aspx" style="font-family: cairo;">تقارير الدفع</a></li>
+                                     <li><a href="WhoIs.aspx" style="font-family: Calibri;">WhoIs</a></li>
+                              
+
+                                    <li>
+                                        <a href="mydomains.aspx" style="font-family: cairo;">نطاقاتي
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ChangeLang.aspx" style="font-family: Calibri;">English
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="Post-Jobs">
+                                    <a href="register.aspx" class="" style="font-family: cairo; font-size: medium;">تسجيل نطاق 
+                                    </a>
+                                </div>
+                                <div class="hamburger menu_mm menu-vertical">
+                                    <i class="large material-icons font-color-white menu_mm menu-vertical">menu</i>
+                                </div>
+
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+            <div class="menu_close_container">
+                <div class="menu_close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <nav class="menu_nav">
+                <ul class="menu_mm">
+                    <li class="menu_mm" style="font-family: cairo">
+                        <a href="mydomains.aspx" style="font-family: cairo">الرئيسية
+                           </a>
+                    </li>
+                    <li class="menu_mm" style="font-family: cairo">
+                        <a href="mydomains.aspx" style="font-family: cairo">نطاقاتي
+                        </a>
+                    </li>
+                    <li class="menu_mm"><a href="Invoice.aspx" style="font-family: cairo">اعداد فاتورة</a></li>
+                    <li class="menu_mm"><a href="report_invoice.aspx" style="font-family: cairo">تقارير الدفع</a></li>
+                    <li class="menu_mm"><a href="Include.aspx" style="font-family: cairo">ضم نظاقات لحسابي</a></li>
+                    <li class="menu_mm"><a href="WhoIs.aspx" style="font-family: Calibri;">WhoIs</a></li>
+                    <li class="menu_mm"><a href="register.aspx" style="font-family: cairo">تسجيل نطاق</a></li>
+                    <li class="menu_mm"><a href="ChangeLang.aspx" style="font-family: Calibri">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body class="background-color-white" style="background-color: white" onload="OnLoad()">
+        <form id="form1" runat="server" >
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                   
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <div style="text-align: center">
+            <label id="Label1" runat="server" style="color: red; font-family: cairo; font-weight: bold"></label>
+        </div>
+        <footer id="footer" class="background-color-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 vertical-space-2">
+                        <h5>&nbsp;</h5>
+                        <h5>&nbsp;</h5>
+                        <h5 style="font-family: cairo; text-align: center">من نحن</h5>
+                        <p class="paregraf" dir="rtl" style="font-family: cairo; text-align: right; color: black; font-weight: bold">تُعد وزارة الإقتصاد الرقمي والريادة المسؤول الإداري والمسجل الحصري لأسماء النطاقات المنتهية بالنطاق العلوي اللاتيني jo. على المستويين الأول والثاني والنطاق العلوي الأردني العربي (.الاردن).(ICANN) ؛ الجهة العالمية الواضعة لسياسات الأسماء والأرقام على شبكة الإنترنت. </p>
+
+                    </div>
+                    <div class="col-lg-2 col-md-6 vertical-space-2">
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 vertical-space-2">
+                        <h5>&nbsp;</h5>
+                        <h5>&nbsp;</h5>
+                        <h5 style="font-family: cairo; text-align: right" dir="rtl">الدعم الفني</h5>
+                        <div class="text" style="font-family: cairo; text-align: right; float: right; color: black; font-weight: bold" dir="rtl">
+                            <p style="font-family: cairo; text-align: right"><a href="#" style="font-family: cairo; text-align: right; float: right; color: black; font-weight: bold" dir="rtl">065300263</a></p>
+                            <p style="font-family: cairo; text-align: right"><a href="#" style="font-family: cairo; text-align: right; float: right; color: black; font-weight: bold" dir="rtl">dns@modee.gov.jo</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 vertical-space-2">
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 vertical-space-2">
+                        <h5>&nbsp;</h5>
+                        <h5>&nbsp;</h5>
+                        <h5 style="font-family: cairo; text-align: right" dir="rtl">روابط مهمة</h5>
+                        </p>
+    <div class="text" style="font-family: cairo; text-align: right; float: right;" dir="rtl">
+        <p style="font-family: cairo; text-align: right"><a href="FAQ.aspx" style="font-family: cairo; text-align: right; color: black; font-weight: bold" dir="rtl">أسئلة متكررة</a></p>
+        <p style="font-family: cairo; text-align: right"><a href="https://www.efawateercom.jo/Portal/Home" target="_blank" style="font-family: cairo; text-align: right; color: black; font-weight: bold" dir="rtl">إي فواتيركم</a></p>
+        <p style="font-family: cairo; text-align: right"><a href="https://www.sanad.gov.jo/Default/AR" target="_blank" style="font-family: cairo; text-align: right; color: black; font-weight: bold" dir="rtl">سند</a></p>
+        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="vertical-space-60"></div>
+
+            <div class="container-fluid background-color-orange main-footer">
+                <div class="container text-center">
+                    <div class="vertical-space-30"></div>
+                    <p><a target="_blank" href="https://www.modee.gov.jo/" style="color: silver; font-family: cairo">جميع الحقوق محفوظة © وزارة الإقتصاد الرقمي والريادة  </a></p>
+                </div>
+            </div>
+        </footer>
+
+
+
+         <script data-cfasync="false" src="js/email-decode.min.js" async defer></script>
+        <script src="../js/jquery.min.js" async defer></script>
+        <script src="../owlcarousel/owl.carousel.min.js" async defer></script>
+        <script src="../js/jquery-ui.min.js" async defer></script>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" media="all">
+        <script src="../js/custom.js" async defer></script>
+        <script>
+            $(".search-icone").click(function () {
+                // $(".menu").animate({height: "100vh"});
+            });
+
+        </script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" async defer></script>
+         <script src="build/js/intlTelInput.js" async defer></script>
+    <script src="js/4n2NXumNjtg5LPp6VXLlDicTUfA.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,267 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPageAr.master.vb" Inherits="Domain2021.MasterPageAr" %>
+
+<!doctype html>
+<html lang="ar">
+<head>
+ 
+<meta charset="utf-8">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+             /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+    .callout {
+        direction: rtl;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #f3f3f3;
+        border: 1px solid #4241aa;
+        border-right-width: 10px;
+        border-radius: 3px;
+    }
+ 
+  h4{
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  code {
+    border-radius: 3px;
+  }
+  & + .bs-callout {
+    margin-top: -5px;
+  }
+}
+@each $name,$color in (default,#428bca),(primary,#428bca),(success,#5cb85c),(danger,#d9534f),(warning,#f0ad4e),(info,#5bc0de), (bdc,#29527a) {
+  .callout-#{$name} {
+    border-left-color: $color;
+    h4 {
+      color: $color;
+    }
+  }
+}
+</style>
+
+<title>موقع تسجيل النطاقات</title>
+
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="css\css3.css" rel="stylesheet" media="all">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.html">
+<link rel="shortcut icon" type="image/ico" href="images/favicon.html" />
+ <link rel="apple-touch-icon" href="images/apple-touch-icon.html">
+<link rel="shortcut icon" type="image/ico" href="images/favicon.html" />
+  <link rel="stylesheet" href="css/bootstrap.min.css"  crossorigin="anonymous" media="all">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/matrialize.css" rel="stylesheet" media="all">
+<link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/style.css" media="all">
+<script src="build/js2/intlTelInput.js" ></script>
+<link rel="stylesheet" href="build/css/intITellnputRTL.css" media="all"/>
+<script id="menatracks-widget"
+            baseurl="https://cmu.gov.jo/application_widget"
+            widgetform="https://cmu.gov.jo/application_widget/Widget/WidgetSurveyViewer.aspx?Value=fEDloY/4mjBeEwKHoyJ9yTWNvfFGy/NTWZDEkOVDS7Y="
+            src="https://cmu.gov.jo/application_widget/JS/WidgetJs/widget.js"></script>
+<link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" media="all"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<header class="header">
+<div class="top_bar background-color-orange">
+<div class="top_bar_container">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+<ul class="top_bar_contact_list">
+<li>
+<i class="fa fa-phone coll" aria-hidden="true"></i>
+<div class="contact-no"  id="PhoneNo" runat="server">00962 6 5300225</div>
+</li>
+<li>
+<i class="fa fa-envelope coll" aria-hidden="true"></i>
+<div class="email">
+<a href="mailto:dns@modee.gov.jo" style="color:white" id="Email" runat="server">dns@modee.gov.jo</a></div>
+</li>
+</ul>
+<div class=" ml-auto ">
+<div></div>
+<div class="hamburger menu_mm  search_button transparent search display"><i class="large material-icons font-color-white  search-icone  menu_mm ">menu</i></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header_container background-color-orange-light">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="header_content d-flex flex-row align-items-center justify-content-start">
+<div class="logo_container">
+<a href="https://modee.gov.jo/" target="_blank">
+<img src="imags/logo.png" class="logo-text" alt="">
+</a>
+</div>
+<nav class="main_nav_contaner ml-auto" style="font-family:cairo">
+<ul class="main_nav">
+
+<li><a href="ChangeLang.aspx" style="font-family:cairo">English</a></li>
+    <li>
+<a href="LoginUser.aspx" style="font-family:cairo">حسابي
+</a>
+</li>
+<li><a href="ContactUs.aspx" style="font-family:cairo">للاتصال بنا</a></li>
+
+<li><a href="Efawateercom.aspx"style="font-family:cairo">إي فواتيركم</a></li>
+<li><a href="Policy.aspx"style="font-family:cairo">سياسة التسجيل</a></li>
+
+<li><a href="AboutUs.aspx" style="font-family:cairo">من نحن</a></li>
+     
+<li>
+
+<a  href="FirstPage.aspx" style="font-family:cairo;">الرئيسية
+</a>
+ </li>
+</ul>
+<div class="Post-Jobs">
+<a href="registerdomain.aspx" class="" style="font-family:cairo;font-size:medium">
+تسجيل نطاق 
+</a>
+</div>
+<div class="hamburger menu_mm menu-vertical">
+<i class="large material-icons font-color-white menu_mm menu-vertical">menu</i>
+</div>
+</nav>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+<div class="menu_close_container">
+<div class="menu_close">
+<div></div>
+<div></div>
+</div>
+</div>
+<nav class="menu_nav">
+<ul class="menu_mm">
+<li  class="menu_mm" style="font-family:cairo">
+<a  href="FirstPage.aspx" style="font-family:cairo">الرئيسية
+<span class="caret"></span></a>
+</li>
+<li class="menu_mm"  style="font-family:cairo">
+<a   href="AboutUs.aspx" style="font-family:cairo">من نحن
+</a>
+</li>
+<li class="menu_mm"><a href="Policy.aspx" style="font-family:cairo">سياسة التسجيل</a></li>
+<li class="menu_mm"><a href="FAQ.aspx" style="font-family:cairo">أسئلة متكررة</a></li>
+<li class="menu_mm"><a href="EfawateerCom.aspx" style="font-family:cairo">إي فواتيركم</a></li>
+<li class="menu_mm"><a href="ContactUs.aspx" style="font-family:cairo">للاتصال بنا</a></li>
+<li class="menu_mm"><a href="ChangeLang.aspx" style="font-family:cairo">English</a></li>
+<li class="menu_mm">
+<a href="LoginUser.aspx" style="font-family:cairo">حسابي
+</a>
+</li>
+</ul>
+</nav>
+</div> 
+</header>
+<body  class="background-color-white" style="background-color:white">
+    <form id="form1" runat="server" >
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+<footer id="footer" class="background-color-white" style="background-image:url('imags/download.jpg');background-size:100%">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-6 vertical-space-2">
+<h5>&nbsp;</h5>
+	<h5>&nbsp;</h5>
+	<h5 style="font-family:cairo; text-align:center" id="AboutUs" runat="server">من نحن</h5>
+<p class="paregraf" dir="rtl" style="font-family:cairo;text-align:right; color:black;font-size:medium; font-weight:bold" id="paragraphfooter" runat="server">تُعد وزارة الإقتصاد الرقمي والريادة المسؤول الإداري والمسجل الحصري لأسماء النطاقات المنتهية بالنطاق العلوي اللاتيني jo. على المستويين الأول والثاني والنطاق العلوي الأردني العربي (.الاردن).(ICANN) ؛ الجهة العالمية الواضعة لسياسات الأسماء والأرقام على شبكة الإنترنت. </p>
+
+</div>
+<div class="col-lg-2 col-md-6 vertical-space-2">
+</div>
+
+<div class="col-lg-2 col-md-6 vertical-space-2">
+<h5>&nbsp;</h5>
+<h5>&nbsp;</h5>
+<h5 style="font-family:cairo;text-align:right" dir="rtl" id="support" runat="server">الدعم الفني</h5>
+<div class="text"  style="font-family:cairo;text-align:right; float: right;color:black;font-weight:bold" dir="rtl">
+<p style="font-family:cairo;text-align:right" id="divphone" runat="server" dir="ltr">065300225</p>
+<p style="font-family:cairo;text-align:right"><a href="mailto:dns@modee.gov.jo" style="font-family:cairo;text-align:right; float: right;color:black;font-weight:bold" dir="rtl">dns@modee.gov.jo</a></p>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 vertical-space-2">
+</div>
+
+<div class="col-lg-2 col-md-6 vertical-space-2">
+<h5>&nbsp;</h5>
+<h5>&nbsp;</h5>
+<h5 style="font-family:cairo;text-align:right" dir="rtl">روابط مهمة</h5>
+<div class="text"  style="font-family:cairo;text-align:right; float: right;" dir="rtl">
+<p style="font-family:cairo;text-align:right"><a href="faq.aspx" style="font-family:cairo;text-align:right;color:black;font-weight:bold" dir="rtl">أسئلة متكررة</a></p>
+<p style="font-family:cairo;text-align:right"><a href="https://www.efawateercom.jo/Portal/Home" target="_blank" style="font-family:cairo;text-align:right;color:black;font-weight:bold" dir="rtl"> إي فواتيركم</a></p>
+<p style="font-family:cairo;text-align:right"><a href="https://www.sanad.gov.jo/default/en" target="_blank" style="font-family:cairo;text-align:right;color:black;font-weight:bold" dir="rtl">سند</a></p> 
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="vertical-space-60"></div>
+
+<div class="container-fluid background-color-orange main-footer">
+<div class="container text-center">
+<div class="vertical-space-30"></div>
+<p><a target="_blank" href="https://www.modee.gov.jo/" style="color:silver; font-family:cairo">جميع الحقوق محفوظة © وزارة الإقتصاد الرقمي والريادة  </a></p>
+</div>
+</div>
+</footer>
+
+
+
+		               
+    <script data-cfasync="false" src="js/email-decode.min.js" async defer></script><script src="js/jquery-3.6.1.min.js" async defer></script>
+ <script src="js/bootstrap3.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async defer></script>
+
+<script src="owlcarousel/owl.carousel.min.js" async defer></script>
+<script src="js/jquery-ui.min.js" async defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" media="all"> 
+    <script src="js/custom.js" async defer></script>
+<script>
+    $(".search-icone").click(function () {
+        // $(".menu").animate({height: "100vh"});
+    });
+
+</script>
+<script src="js/4n2NXumNjtg5LPp6VXLlDicTUfA.js" async defer></script>  
+</body>
+
+
+</html>

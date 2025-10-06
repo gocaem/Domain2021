@@ -1,0 +1,19 @@
+﻿
+Users\report_invoice:Path cannot be null.
+Parameter name: path   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at Spire.Presentation.Collections.ShapeList.AppendEmbedImage(ShapeType shapeType, String fileName, RectangleF rectangle)
+   at Domain2021.report_invoice.ExtractInvoiceAsPDF(Int32 Client_Number, String logoMoOEE, String ampaid, String FilePath, String QRData, String[] Years, String[] Domains, String pid, String clientname) in D:\Projects\Domain2021\Domain2021\Users\report_invoice.aspx.vb:line 572 5/11/2025 12:02:00 PM
+Users\report_invoice:Path cannot be null.
+Parameter name: path   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at Spire.Presentation.Collections.ShapeList.AppendEmbedImage(ShapeType shapeType, String fileName, RectangleF rectangle)
+   at Domain2021.report_invoice.ExtractInvoiceAsPDF(Int32 Client_Number, String logoMoOEE, String ampaid, String FilePath, String QRData, String[] Years, String[] Domains, String pid, String clientname) in D:\Projects\Domain2021\Domain2021\Users\report_invoice.aspx.vb:line 572 5/11/2025 12:31:52 PM
+Users\report_invoice:Path cannot be null.
+Parameter name: path   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at Spire.Presentation.Collections.ShapeList.AppendEmbedImage(ShapeType shapeType, String fileName, RectangleF rectangle)
+   at Domain2021.report_invoice.ExtractInvoiceAsPDF(Int32 Client_Number, String logoMoOEE, String ampaid, String FilePath, String QRData, String[] Years, String[] Domains, String pid, String clientname) in D:\Projects\Domain2021\Domain2021\Users\report_invoice.aspx.vb:line 574 5/11/2025 12:36:18 PM

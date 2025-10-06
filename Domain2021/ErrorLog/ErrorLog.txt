@@ -1,0 +1,81 @@
+﻿
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:12:15 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:30:02 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:30:12 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:30:53 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:31:58 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 15 2/18/2025 3:32:01 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:32:09 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:38:21 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:39:24 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:43:36 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:44:38 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:49:20 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 3:55:08 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/18/2025 4:12:13 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 15 2/18/2025 11:22:11 PM
+root\policy:The 'MasterPageFile' property can only be set in or before the 'Page_PreInit' event.   at System.Web.UI.Page.set_MasterPageFile(String value)
+   at Domain2021.Policy.Page_Load(Object sender, EventArgs e) in D:\Projects\Domain2021\Domain2021\Policy.aspx.vb:line 19 2/19/2025 12:24:28 AM
+Users\Register:Conversion from type 'DBNull' to type 'String' is not valid.   at Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   at Domain2021.WebForm1.send_regester_EMail(Int32 domanes_id) in D:\Projects\Domain2021\Domain2021\WebForm1.aspx.vb:line 74 4/9/2025 10:24:54 PM
+Users\Register:Conversion from type 'DBNull' to type 'String' is not valid.   at Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   at Domain2021.WebForm1.send_regester_EMail(Int32 domanes_id) in D:\Projects\Domain2021\Domain2021\WebForm1.aspx.vb:line 74 4/9/2025 10:25:18 PM
+root\Whoisdetails:Format of the initialization string does not conform to specification starting at index 0.   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Domain2021.WhoisDetails.Page_Load(Object sender, EventArgs e) in C:\Users\Reef.a\Desktop\Domain2021\Domain2021\WhoisDetails.aspx.vb:line 16 9/1/2025 7:34:29 PM
+root\Whoisdetails:Format of the initialization string does not conform to specification starting at index 0.   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Domain2021.WhoisDetails.Page_Load(Object sender, EventArgs e) in C:\Users\Reef.a\Desktop\Domain2021\Domain2021\WhoisDetails.aspx.vb:line 16 9/1/2025 7:35:21 PM
+root\Whoisdetails:Format of the initialization string does not conform to specification starting at index 0.   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Domain2021.WhoisDetails.Page_Load(Object sender, EventArgs e) in C:\Users\Reef.a\Desktop\Domain2021\Domain2021\WhoisDetails.aspx.vb:line 16 9/1/2025 7:35:30 PM
+root\Whoisdetails:Format of the initialization string does not conform to specification starting at index 0.   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Domain2021.WhoisDetails.fill_db(Int32 Dom_id) in C:\Users\Reef.a\Desktop\Domain2021\Domain2021\WhoisDetails.aspx.vb:line 82 9/1/2025 7:39:10 PM
